@@ -9,6 +9,29 @@
 button,input,select,textarea{font:inherit}button,select,summary{cursor:pointer}a{color:var(--teal)}:focus-visible{outline:3px solid #067c83;outline-offset:3px}header{position:sticky;top:0;z-index:2;background:var(--navy);color:white;padding:.6rem max(1rem,calc((100% - 1060px)/2))}header strong{font-size:1.3rem;color:var(--cyan)}nav,.row{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}nav{margin-top:.35rem}nav button{background:transparent;color:white;border:1px solid #73859b;padding:.42rem .67rem}nav button[aria-current=page]{background:var(--cyan);color:var(--navy);border-color:var(--cyan)}main{max-width:1060px;margin:auto;padding:1rem 1rem 2rem}.hero,article{border-radius:22px;padding:clamp(1rem,3vw,2rem);margin:1rem 0;box-shadow:0 9px 25px #16273e13}.hero{background:var(--navy);color:white;border-bottom:7px solid var(--orange)}article{background:white;border:1px solid var(--line)}h1,h2,h3,p{margin:0 0 .65rem}h1{font-size:clamp(2rem,6vw,3.7rem);line-height:1.05}h2{font-size:clamp(1.45rem,4vw,2.3rem);line-height:1.15}h3{line-height:1.2}.eyebrow{font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:var(--teal)}.hero .eyebrow,.hero a{color:var(--cyan)}.muted,small{color:var(--muted)}.hero small{color:white}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:.8rem}.grid article{margin:0}button{border:1px solid var(--line);border-radius:12px;background:white;color:var(--navy);padding:.55rem .85rem;min-height:44px;font-weight:700}.primary{background:var(--orange);border-color:var(--orange)}.secondary{background:#e4f8f6}.chip{display:inline-block;border-radius:100px;background:#fff0cb;padding:.15rem .65rem;font-weight:750;font-size:.85rem}label{display:block;font-weight:650;margin:.45rem 0}input:not([type=radio]):not([type=checkbox]),select,textarea{width:100%;border:1px solid #8c9baa;border-radius:9px;padding:.55rem;color:var(--navy);background:white}fieldset{border:0;padding:0;margin:.6rem 0}fieldset label{padding:.4rem .6rem;border:1px solid var(--line);border-radius:9px}.feedback{margin:.65rem 0;padding:.65rem;border-left:4px solid var(--teal);background:#e6f7f5}.feedback:empty{display:none}progress{width:100%;height:1.2rem;accent-color:var(--teal)}details{border-top:1px solid var(--line);padding:.7rem 0}summary{font-weight:750}footer{text-align:center;padding:1rem;color:var(--muted)}[hidden]{display:none!important}.list{display:grid;gap:.45rem}.list button{text-align:left}.collectif main{font-size:clamp(1.1rem,2vw,1.45rem)}.flow{border-left:5px solid var(--orange);background:#fff4eb;padding:.7rem}.step{scroll-margin-top:9rem}#notice{min-height:1.5em;margin:.45rem 0}.printonly{display:none}@media(max-width:420px){nav{gap:.25rem}nav button{padding:.3rem .45rem;font-size:.86rem}}@media print{header,footer,button,#notice{display:none!important}body{background:white}main{max-width:none;padding:0}article{box-shadow:none;break-inside:avoid}.printonly{display:block}}
 .gloss{display:inline;min-height:0;border:0;border-radius:.2em;padding:0 .12em;background:#fff0b7;color:#073e44;font:inherit;font-weight:inherit;line-height:inherit;text-decoration:underline dotted;text-underline-offset:.16em;cursor:pointer;box-decoration-break:clone;-webkit-box-decoration-break:clone}.gloss:hover,.gloss:focus-visible{background:#baf3e9}.course-step{scroll-margin-top:9rem}.course-step summary{cursor:pointer}.course-step summary .status{display:block;font-size:.86em;font-weight:600;color:var(--teal)}.course-step form{margin:1rem 0}.path-item{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap;border-top:1px solid var(--line);padding:.45rem 0}.diagram{padding-left:1.35rem}.flow strong{display:block}.gloss-dialog{border:0;border-radius:18px;padding:clamp(1rem,4vw,1.7rem);width:min(34rem,calc(100% - 1.6rem));max-height:85vh;overflow:auto;color:var(--navy);box-shadow:0 14px 50px #16273e55}.gloss-dialog::backdrop{background:#16273e99}.gloss-dialog .row{justify-content:space-between;align-items:start}.gloss-dialog h2{flex:1}.gloss-dialog button{min-width:44px}
 @media print{button.gloss{display:inline!important;background:transparent;color:inherit;text-decoration:none}}
+/* L'accueil reprend le contraste et les accents du parcours précédent. */
+.home-cover{margin:1rem 0 1.2rem;border-radius:24px;overflow:hidden;background:#fffdf8;box-shadow:0 16px 38px #16273e22}
+.home-band{height:7px;background:linear-gradient(90deg,#ff6269 0 24%,#ffc956 24% 47%,#0fb6ce 47% 71%,#168873 71% 87%,#7160d8 87%)}
+.home-hero{display:grid;grid-template-columns:1.06fr .94fr}
+.home-intro{padding:clamp(1.35rem,4.4vw,3.35rem);align-self:center}
+.home-intro .eyebrow{color:#a62e41;margin-bottom:.65rem}
+.home-intro h1{font-size:clamp(2.1rem,4.65vw,3.65rem);letter-spacing:-.035em;line-height:1.07}
+.home-intro h1 .gloss{background:transparent;color:inherit;text-decoration-color:#12858a;text-decoration-thickness:.09em}
+.home-intro h1 .gloss:hover,.home-intro h1 .gloss:focus-visible{background:#fff0b7}
+.home-spark{display:block;width:7rem;height:.43rem;border-radius:999px;margin:1.15rem 0;background:linear-gradient(90deg,#0fb6ce 0 34%,#ffc956 34% 67%,#ff6269 67%)}
+.home-lead{font-weight:800;font-size:1.2rem}
+.home-cta{display:flex;flex-wrap:wrap;align-items:center;gap:.85rem;margin-top:1.25rem}
+.home-cta .primary{background:#ff6269;border-color:#ff6269;color:#111f32;padding-inline:1.1rem}
+.home-cta .primary:hover{background:#ff8587}
+.home-steps{font-weight:700;color:#42556a}
+.home-art{margin:0;padding:clamp(1.1rem,3vw,2.1rem);background:radial-gradient(ellipse at 85% 15%,#163c52,#0c1e35 68%);color:white;display:flex;flex-direction:column;justify-content:center}
+.home-art svg{width:100%;height:auto;display:block}
+.home-art figcaption{margin:.7rem 0 0;text-align:center;color:#dfedf8;font-size:.91rem;line-height:1.4}
+.home-art .art-badge{align-self:center;background:#ffc956;color:#15253a;font-weight:850;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;padding:.32rem .7rem;border-radius:99px}
+.home-modes article{border-top:4px solid #0fb6ce}
+.home-modes article+article{border-top-color:#ffc956}
+@media(max-width:650px){.home-hero{grid-template-columns:1fr}.home-art{padding:1rem 1.25rem}.home-art svg{max-width:420px;margin:auto}.home-art figcaption{margin-top:.4rem}.home-cover{border-radius:19px}}
+@media print{.home-cover{box-shadow:none}.home-hero{grid-template-columns:1fr}.home-art{display:none}}
 </style>
 <header><strong>ÉcoCity</strong><nav aria-label="Navigation"><button data-go="home">Accueil</button><button data-go="course">Cours</button><button data-go="path">Parcours</button><button data-go="lex">Lexique</button><button data-go="dm">Devoir</button><button data-go="review">Prépa DST</button></nav></header>
 <main><p id="notice" role="status"></p><div id="view"></div></main>
@@ -89,7 +112,7 @@ terms.forEach((t,i)=>[t[0],...(glossaryForms[t[0]]||[])].forEach(s=>glossaryInde
 const glossaryPattern=new RegExp('(?<![\\p{L}\\p{M}])(?:'+[...glossaryIndex.keys()].sort((a,b)=>b.length-a.length).map(s=>s.replace(/ /g,'\\s+')).join('|')+')(?![\\p{L}\\p{M}])','giu');
 function highlight(root){
  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT), list=[];
- for(let node=walker.nextNode();node;node=walker.nextNode())if(!node.parentElement?.closest('button,a,textarea,select,option,[data-gloss],.eyebrow')&&!(screen==='lex'&&node.parentElement?.closest('summary')))list.push(node);
+ for(let node=walker.nextNode();node;node=walker.nextNode())if(!node.parentElement?.closest('button,a,textarea,select,option,svg,[data-gloss],.eyebrow')&&!(screen==='lex'&&node.parentElement?.closest('summary')))list.push(node);
  for(const node of list){
   const raw=node.textContent;const hits=[...raw.matchAll(glossaryPattern)].filter(m=>!(normalTerm(m[0])==='bien'&&/(?:faire|bien|pas)\s*$/iu.test(raw.slice(0,m.index))));
   if(!hits.length)continue;
@@ -125,8 +148,39 @@ function lessonCard(l,i){
  '<form data-course-question="'+i+'"><h3>Vérifiez votre compréhension</h3>'+pick(l.q,l.options,'course'+i,answer)+'<button class="primary">Vérifier ma réponse</button><div class="feedback" role="status">'+(complete?'<b>Notion validée.</b> '+l.feedback:'')+'</div></form>'+
  '<div class="row">'+(i+1<lessons.length?btn('Notion suivante','data-lesson="'+(i+1)+'"','secondary'):btn('Passer au parcours','data-go="path"','secondary'))+'</div></details>';
 }
+const homeIllustration=`<figure class="home-art">
+ <span class="art-badge">Mission District Live</span>
+ <svg viewBox="0 0 420 250" role="img" aria-labelledby="district-art-title district-art-desc">
+  <title id="district-art-title">Deux flux entre un spectateur et District Live</title>
+  <desc id="district-art-desc">Le spectateur paie le billet à District Live. District Live fournit en retour l’accès au concert.</desc>
+  <defs>
+   <marker id="eco-yellow-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0l10 5-10 5z" fill="#ffc956"/></marker>
+   <marker id="eco-teal-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0l10 5-10 5z" fill="#54d9ea"/></marker>
+  </defs>
+  <path d="M26 192H394M49 67h30m265 98h36M26 110h14m331-21h20M55 168h13" fill="none" stroke="#8fb4c7" stroke-opacity=".27" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="88" cy="126" r="57" fill="#ffc956"/>
+  <circle cx="332" cy="126" r="57" fill="#0fb6ce"/>
+  <circle cx="354" cy="83" r="22" fill="#ff6269"/>
+  <path d="M80 103h16v13H80z" fill="#e99163"/><circle cx="88" cy="95" r="15" fill="#6d352f"/>
+  <path d="M58 155v-12c0-13 13-22 30-22s30 9 30 22v12" fill="#9a3558"/>
+  <path d="M80 108h16v12l-8 6-8-6z" fill="#e99163"/><ellipse cx="88" cy="100" rx="13" ry="15" fill="#edaa82"/>
+  <path d="M74 97q1-22 21-15 8 3 7 16-5-1-9-9-7 8-19 8z" fill="#482e39"/>
+  <path d="M76 124q12 12 24 0" fill="none" stroke="#ff9da6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M300 154V106h65v48M298 109l34-20 34 20z" fill="#0c1e35" stroke="#fff1c9" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M309 150v-31h47v31z" fill="#7142a2"/><path d="M309 120h47m-37 0-9 24m33-24 10 24" fill="none" stroke="#ff8f91" stroke-width="3"/>
+  <path d="M292 154h81" stroke="#fff1c9" stroke-width="5" stroke-linecap="round"/>
+  <path d="M153 105h110" stroke="#ffc956" stroke-width="3" stroke-linecap="round" marker-end="url(#eco-yellow-arrow)"/>
+  <path d="M267 145H157" stroke="#54d9ea" stroke-width="3" stroke-linecap="round" marker-end="url(#eco-teal-arrow)"/>
+  <g font-family="system-ui,sans-serif" text-anchor="middle" font-weight="750">
+   <text x="209" y="94" fill="#ffda7d" font-size="13">Paiement</text><text x="211" y="166" fill="#85eaf2" font-size="13">Accès au concert</text>
+   <text x="88" y="216" fill="#f4f9ff" font-size="15">Spectateur</text><text x="332" y="216" fill="#f4f9ff" font-size="15">District Live</text>
+  </g>
+  <path d="M356 67v13m-6-7h12M51 81v9m-4-4h8" fill="none" stroke="#fff1c9" stroke-width="2" stroke-linecap="round"/>
+ </svg>
+ <figcaption>Un billet, un concert, deux flux en sens opposés.</figcaption>
+</figure>`;
 function render(){const n=Object.keys(state.done).length;notice.textContent=kind==='student'?'Groupe '+group+' · '+n+'/'+total+' étapes validées'+(storage?' · sauvegarde sur cet appareil':' · sauvegarde indisponible'):kind==='collective'?'A. Zeboudj · Mode collectif · aucune donnée élève enregistrée':'';
-  if(screen==='home'){view.innerHTML='<div class="hero"><p class="eyebrow">Économie-Droit · Seconde professionnelle</p><h1 tabindex="-1">Chapitre 2 : Les échanges entre les agents</h1><p><strong>Qui échange quoi, avec qui ?</strong></p><p>Commencez par le cours et ses questions de compréhension. Puis appliquez les notions dans la mission District Live.</p><div class="row"><span class="chip" style="color:#16273e">3 marchés</span><span class="chip" style="color:#16273e">2 types de flux</span></div>'+btn('Commencer le cours','data-go="course"','primary')+'</div><div class="grid"><article>'+head('Projection','En classe')+'<p>Avancez ensemble, sans enregistrer de résultats individuels.</p>'+btn('A. Zeboudj • Mode collectif','id="collective"','primary')+'</article><article>'+head('Travail individuel','À la maison')+'<p>Choisissez votre groupe. Aucun code d’accès n’est nécessaire.</p><form id="login"><label for="group">Votre groupe</label><select id="group" required><option value="">Choisissez votre groupe</option><option value="1">Groupe 1</option><option value="2">Groupe 2</option></select><p><small>La progression reste dans ce navigateur. Aucun envoi automatique.</small></p><button class="primary">Commencer ou reprendre</button></form></article></div>';return}
+  if(screen==='home'){view.innerHTML='<section class="home-cover"><div class="home-band" aria-hidden="true"></div><div class="home-hero"><div class="home-intro"><p class="eyebrow">Économie-Droit · Seconde professionnelle</p><h1 tabindex="-1">Chapitre 2 : Les échanges entre les agents</h1><span class="home-spark" aria-hidden="true"></span><p class="home-lead">Qui échange quoi, avec qui ?</p><p>Commencez par le cours et ses questions de compréhension. Puis appliquez les notions dans la mission District Live.</p><div class="home-cta">'+btn('Commencer le cours','data-go="course"','primary')+'<small class="home-steps">8 notions à découvrir</small></div></div>'+homeIllustration+'</div></section><div class="grid home-modes"><article>'+head('Projection','En classe')+'<p>Avancez ensemble, sans enregistrer de résultats individuels.</p>'+btn('A. Zeboudj • Mode collectif','id="collective"','primary')+'</article><article>'+head('Travail individuel','À la maison')+'<p>Choisissez votre groupe. Aucun code d’accès n’est nécessaire.</p><form id="login"><label for="group">Votre groupe</label><select id="group" required><option value="">Choisissez votre groupe</option><option value="1">Groupe 1</option><option value="2">Groupe 2</option></select><p><small>La progression reste dans ce navigateur. Aucun envoi automatique.</small></p><button class="primary">Commencer ou reprendre</button></form></article></div>';return}
  if(screen==='path'){view.innerHTML='<article>'+head('2. Appliquer','Le parcours')+'<p>'+n+' étapes validées sur '+total+' <span class="chip">'+Math.round(n/total*100)+' %</span></p><progress aria-label="Étapes validées" value="'+n+'" max="'+total+'"></progress><p>Après le cours, réutilisez les notions dans les situations de District Live. Une fiche vous manque ? '+btn('Revenir au cours','data-go="course"','secondary')+'</p><p>En classe : étapes 1 à 7. À la maison : reprenez ces étapes, puis travaillez l’infographie et le manuel.</p><div class="row">'+btn('Reprendre l’étape','data-step="'+state.last+'"','primary')+'</div></article><article class="list">'+stages.map((a,i)=>'<div class="path-item"><strong>'+(i+1)+'. '+a[0]+'</strong>'+btn(state.done[i]?'Revoir l’activité '+(i+1):'Faire l’activité '+(i+1),'data-step="'+i+'"','secondary')+'</div>').join('')+'</article>';return}
  if(screen==='course'){view.innerHTML='<article>'+head('1. Comprendre','Cours théorique')+'<p>Lisez les notions dans l’ordre, puis répondez à la question de chaque fiche. Les mots surlignés ouvrent leur définition.</p><p id="course-status" role="status">'+courseStatus()+'</p><div class="row">'+btn('Passer au parcours','data-go="path"','secondary')+'</div></article><article>'+lessons.map(lessonCard).join('')+'</article>';const next=lessons.findIndex((_,i)=>!state.courseDone[i]);openLesson(next<0?0:next,false);return}
  if(screen==='lex'){view.innerHTML='<article>'+head('Définition · exemple · vigilance','Lexique')+terms.map(t=>'<details><summary>'+t[0]+'</summary><p>'+t[1]+'</p><p><b>Exemple :</b> '+t[2]+'</p><p><b>À retenir :</b> '+t[3]+'</p>'+btn('Voir le cours','data-lesson="'+t[4]+'"','secondary')+'</details>').join('')+'</article>';return}
@@ -141,4 +195,5 @@ for(const ev of ['pointerdown','keydown','scroll'])document.addEventListener(ev,
 setInterval(()=>{if(kind==='student'&&!document.hidden&&Date.now()-active<60000){state.seconds+=5;save()}},5000);
 show('home',false);restore();
 </script>
+</body>
 </html>
